@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7331AD21614A17000C13798 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7331AD11614A17000C13798 /* UIKit.framework */; };
+		E7331AD41614A17000C13798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7331AD31614A17000C13798 /* Foundation.framework */; };
+		E7331AD61614A17000C13798 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7331AD51614A17000C13798 /* CoreGraphics.framework */; };
+		E7331ADC1614A17000C13798 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7331ADA1614A17000C13798 /* InfoPlist.strings */; };
+		E7331ADE1614A17000C13798 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7331ADD1614A17000C13798 /* main.m */; };
+		E7331AE21614A17000C13798 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7331AE11614A17000C13798 /* AppDelegate.m */; };
+		E7331AEA1614A17000C13798 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7331AE91614A17000C13798 /* SenTestingKit.framework */; };
+		E7331AEB1614A17000C13798 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7331AD11614A17000C13798 /* UIKit.framework */; };
+		E7331AEC1614A17000C13798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7331AD31614A17000C13798 /* Foundation.framework */; };
+		E7331AF41614A17000C13798 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7331AF21614A17000C13798 /* InfoPlist.strings */; };
+		E7331AF71614A17000C13798 /* MGCheckboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7331AF61614A17000C13798 /* MGCheckboxTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7331AED1614A17000C13798 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7331AC41614A16F00C13798 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7331ACC1614A17000C13798;
+			remoteInfo = MGCheckbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E7331ACD1614A17000C13798 /* MGCheckbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGCheckbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7331AD11614A17000C13798 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7331AD31614A17000C13798 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E7331AD51614A17000C13798 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7331AD91614A17000C13798 /* MGCheckbox-Info.plist */ = {isa = PBXFileReference; path = "MGCheckbox-Info.plist"; sourceTree = "<group>"; };
+		E7331ADB1614A17000C13798 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7331ADD1614A17000C13798 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7331ADF1614A17000C13798 /* MGCheckbox-Prefix.pch */ = {isa = PBXFileReference; path = "MGCheckbox-Prefix.pch"; sourceTree = "<group>"; };
+		E7331AE01614A17000C13798 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E7331AE11614A17000C13798 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E7331AE81614A17000C13798 /* MGCheckboxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGCheckboxTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7331AE91614A17000C13798 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E7331AF11614A17000C13798 /* MGCheckboxTests-Info.plist */ = {isa = PBXFileReference; path = "MGCheckboxTests-Info.plist"; sourceTree = "<group>"; };
+		E7331AF31614A17000C13798 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7331AF51614A17000C13798 /* MGCheckboxTests.h */ = {isa = PBXFileReference; path = MGCheckboxTests.h; sourceTree = "<group>"; };
+		E7331AF61614A17000C13798 /* MGCheckboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGCheckboxTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7331ACA1614A17000C13798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7331AD21614A17000C13798 /* UIKit.framework in Frameworks */,
+				E7331AD41614A17000C13798 /* Foundation.framework in Frameworks */,
+				E7331AD61614A17000C13798 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7331AE41614A17000C13798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7331AEA1614A17000C13798 /* SenTestingKit.framework in Frameworks */,
+				E7331AEB1614A17000C13798 /* UIKit.framework in Frameworks */,
+				E7331AEC1614A17000C13798 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7331AC21614A16F00C13798 = {
+			isa = PBXGroup;
+			children = (
+				E7331AD71614A17000C13798 /* MGCheckbox */,
+				E7331AEF1614A17000C13798 /* MGCheckboxTests */,
+				E7331AD01614A17000C13798 /* Frameworks */,
+				E7331ACE1614A17000C13798 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7331ACE1614A17000C13798 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7331ACD1614A17000C13798 /* MGCheckbox.app */,
+				E7331AE81614A17000C13798 /* MGCheckboxTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7331AD01614A17000C13798 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7331AD11614A17000C13798 /* UIKit.framework */,
+				E7331AD31614A17000C13798 /* Foundation.framework */,
+				E7331AD51614A17000C13798 /* CoreGraphics.framework */,
+				E7331AE91614A17000C13798 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7331AD71614A17000C13798 /* MGCheckbox */ = {
+			isa = PBXGroup;
+			children = (
+				E7331AE01614A17000C13798 /* AppDelegate.h */,
+				E7331AE11614A17000C13798 /* AppDelegate.m */,
+				E7331AD81614A17000C13798 /* Supporting Files */,
+			);
+			path = MGCheckbox;
+			sourceTree = "<group>";
+		};
+		E7331AD81614A17000C13798 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7331AD91614A17000C13798 /* MGCheckbox-Info.plist */,
+				E7331ADA1614A17000C13798 /* InfoPlist.strings */,
+				E7331ADD1614A17000C13798 /* main.m */,
+				E7331ADF1614A17000C13798 /* MGCheckbox-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7331AEF1614A17000C13798 /* MGCheckboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7331AF51614A17000C13798 /* MGCheckboxTests.h */,
+				E7331AF61614A17000C13798 /* MGCheckboxTests.m */,
+				E7331AF01614A17000C13798 /* Supporting Files */,
+			);
+			path = MGCheckboxTests;
+			sourceTree = "<group>";
+		};
+		E7331AF01614A17000C13798 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7331AF11614A17000C13798 /* MGCheckboxTests-Info.plist */,
+				E7331AF21614A17000C13798 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7331ACC1614A17000C13798 /* MGCheckbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7331AFA1614A17000C13798 /* Build configuration list for PBXNativeTarget "MGCheckbox" */;
+			buildPhases = (
+				E7331AC91614A17000C13798 /* Sources */,
+				E7331ACA1614A17000C13798 /* Frameworks */,
+				E7331ACB1614A17000C13798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGCheckbox;
+			productName = MGCheckbox;
+			productReference = E7331ACD1614A17000C13798 /* MGCheckbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7331AE71614A17000C13798 /* MGCheckboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7331AFD1614A17000C13798 /* Build configuration list for PBXNativeTarget "MGCheckboxTests" */;
+			buildPhases = (
+				E7331AE31614A17000C13798 /* Sources */,
+				E7331AE41614A17000C13798 /* Frameworks */,
+				E7331AE51614A17000C13798 /* Resources */,
+				E7331AE61614A17000C13798 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7331AEE1614A17000C13798 /* PBXTargetDependency */,
+			);
+			name = MGCheckboxTests;
+			productName = MGCheckboxTests;
+			productReference = E7331AE81614A17000C13798 /* MGCheckboxTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7331AC41614A16F00C13798 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Duchy Software Ltd";
+			};
+			buildConfigurationList = E7331AC71614A16F00C13798 /* Build configuration list for PBXProject "MGCheckbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E7331AC21614A16F00C13798;
+			productRefGroup = E7331ACE1614A17000C13798 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7331ACC1614A17000C13798 /* MGCheckbox */,
+				E7331AE71614A17000C13798 /* MGCheckboxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7331ACB1614A17000C13798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7331ADC1614A17000C13798 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7331AE51614A17000C13798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7331AF41614A17000C13798 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E7331AE61614A17000C13798 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7331AC91614A17000C13798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7331ADE1614A17000C13798 /* main.m in Sources */,
+				E7331AE21614A17000C13798 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7331AE31614A17000C13798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7331AF71614A17000C13798 /* MGCheckboxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7331AEE1614A17000C13798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7331ACC1614A17000C13798 /* MGCheckbox */;
+			targetProxy = E7331AED1614A17000C13798 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7331ADA1614A17000C13798 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7331ADB1614A17000C13798 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E7331AF21614A17000C13798 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7331AF31614A17000C13798 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7331AF81614A17000C13798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E7331AF91614A17000C13798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7331AFB1614A17000C13798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGCheckbox/MGCheckbox-Prefix.pch";
+				INFOPLIST_FILE = "MGCheckbox/MGCheckbox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E7331AFC1614A17000C13798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGCheckbox/MGCheckbox-Prefix.pch";
+				INFOPLIST_FILE = "MGCheckbox/MGCheckbox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E7331AFE1614A17000C13798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MGCheckbox.app/MGCheckbox";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGCheckbox/MGCheckbox-Prefix.pch";
+				INFOPLIST_FILE = "MGCheckboxTests/MGCheckboxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E7331AFF1614A17000C13798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MGCheckbox.app/MGCheckbox";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGCheckbox/MGCheckbox-Prefix.pch";
+				INFOPLIST_FILE = "MGCheckboxTests/MGCheckboxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7331AC71614A16F00C13798 /* Build configuration list for PBXProject "MGCheckbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7331AF81614A17000C13798 /* Debug */,
+				E7331AF91614A17000C13798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7331AFA1614A17000C13798 /* Build configuration list for PBXNativeTarget "MGCheckbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7331AFB1614A17000C13798 /* Debug */,
+				E7331AFC1614A17000C13798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E7331AFD1614A17000C13798 /* Build configuration list for PBXNativeTarget "MGCheckboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7331AFE1614A17000C13798 /* Debug */,
+				E7331AFF1614A17000C13798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7331AC41614A16F00C13798 /* Project object */;
+}
