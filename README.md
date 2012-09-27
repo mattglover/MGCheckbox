@@ -33,7 +33,7 @@ typedef enum {
 } CheckboxStyle;
 ```
 
-Modifying method  + (id)checkboxWithStyle:(CheckboxStyle)style (MGCheckbox.m)
+Modifying method  `+ (id)checkboxWithStyle:(CheckboxStyle)style` (MGCheckbox.m)
 ```objc
 + (id)checkboxWithStyle:(CheckboxStyle)style {
     
