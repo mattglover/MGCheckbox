@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MGCheckbox.h"
 
 @implementation AppDelegate
 
@@ -23,6 +24,19 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    MGCheckbox *checkboxDefault = [MGCheckbox checkbox];
+    [checkboxDefault setCenter:CGPointMake(200, 100)];
+    [self.window addSubview:checkboxDefault];
+    
+    MGCheckbox *checkboxWithStyle = [MGCheckbox checkboxWithStyle:CheckboxStyleDefault];
+    [checkboxWithStyle setCenter:CGPointMake(200, 180)];
+    [self.window addSubview:checkboxWithStyle];
+    
+    MGCheckbox *checkboxWithImages = [MGCheckbox checkboxWithOnImage:[UIImage imageNamed:@"checkbox-on"] offImage:[UIImage imageNamed:@"checkbox-off"]];
+    [checkboxWithImages setCenter:CGPointMake(200, 260)];
+    [self.window addSubview:checkboxWithImages];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
