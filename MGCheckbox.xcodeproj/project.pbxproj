@@ -23,6 +23,7 @@
 		E7331B0E1614A41B00C13798 /* checkbox-off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7331B0A1614A41B00C13798 /* checkbox-off@2x.png */; };
 		E7331B0F1614A41B00C13798 /* checkbox-on.png in Resources */ = {isa = PBXBuildFile; fileRef = E7331B0B1614A41B00C13798 /* checkbox-on.png */; };
 		E7331B101614A41B00C13798 /* checkbox-on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7331B0C1614A41B00C13798 /* checkbox-on@2x.png */; };
+		E7331B121614AFB500C13798 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7331B111614AFB500C13798 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		E7331B0A1614A41B00C13798 /* checkbox-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-off@2x.png"; path = "MGCheckbox/Resources/checkbox-off@2x.png"; sourceTree = "<group>"; };
 		E7331B0B1614A41B00C13798 /* checkbox-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-on.png"; path = "MGCheckbox/Resources/checkbox-on.png"; sourceTree = "<group>"; };
 		E7331B0C1614A41B00C13798 /* checkbox-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-on@2x.png"; path = "MGCheckbox/Resources/checkbox-on@2x.png"; sourceTree = "<group>"; };
+		E7331B111614AFB500C13798 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7331B121614AFB500C13798 /* QuartzCore.framework in Frameworks */,
 				E7331AD21614A17000C13798 /* UIKit.framework in Frameworks */,
 				E7331AD41614A17000C13798 /* Foundation.framework in Frameworks */,
 				E7331AD61614A17000C13798 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +90,7 @@
 		E7331AC21614A16F00C13798 = {
 			isa = PBXGroup;
 			children = (
+				E7331B111614AFB500C13798 /* QuartzCore.framework */,
 				E7331AD71614A17000C13798 /* MGCheckbox */,
 				E7331AEF1614A17000C13798 /* MGCheckboxTests */,
 				E7331AD01614A17000C13798 /* Frameworks */,
