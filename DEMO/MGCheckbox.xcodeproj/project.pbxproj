@@ -53,12 +53,12 @@
 		E7331AF31614A17000C13798 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E7331AF51614A17000C13798 /* MGCheckboxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGCheckboxTests.h; sourceTree = "<group>"; };
 		E7331AF61614A17000C13798 /* MGCheckboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGCheckboxTests.m; sourceTree = "<group>"; };
-		E7331B041614A36A00C13798 /* MGCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGCheckbox.h; path = MGCheckbox/MGCheckbox.h; sourceTree = "<group>"; };
-		E7331B051614A36A00C13798 /* MGCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGCheckbox.m; path = MGCheckbox/MGCheckbox.m; sourceTree = "<group>"; };
-		E7331B091614A41B00C13798 /* checkbox-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-off.png"; path = "MGCheckbox/Resources/checkbox-off.png"; sourceTree = "<group>"; };
-		E7331B0A1614A41B00C13798 /* checkbox-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-off@2x.png"; path = "MGCheckbox/Resources/checkbox-off@2x.png"; sourceTree = "<group>"; };
-		E7331B0B1614A41B00C13798 /* checkbox-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-on.png"; path = "MGCheckbox/Resources/checkbox-on.png"; sourceTree = "<group>"; };
-		E7331B0C1614A41B00C13798 /* checkbox-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-on@2x.png"; path = "MGCheckbox/Resources/checkbox-on@2x.png"; sourceTree = "<group>"; };
+		E7331B041614A36A00C13798 /* MGCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGCheckbox.h; path = ../../MGCheckbox/MGCheckbox.h; sourceTree = "<group>"; };
+		E7331B051614A36A00C13798 /* MGCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGCheckbox.m; path = ../../MGCheckbox/MGCheckbox.m; sourceTree = "<group>"; };
+		E7331B091614A41B00C13798 /* checkbox-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-off.png"; path = "../../MGCheckbox/Resources/checkbox-off.png"; sourceTree = "<group>"; };
+		E7331B0A1614A41B00C13798 /* checkbox-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-off@2x.png"; path = "../../MGCheckbox/Resources/checkbox-off@2x.png"; sourceTree = "<group>"; };
+		E7331B0B1614A41B00C13798 /* checkbox-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-on.png"; path = "../../MGCheckbox/Resources/checkbox-on.png"; sourceTree = "<group>"; };
+		E7331B0C1614A41B00C13798 /* checkbox-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-on@2x.png"; path = "../../MGCheckbox/Resources/checkbox-on@2x.png"; sourceTree = "<group>"; };
 		E7331B111614AFB500C13798 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -452,6 +452,7 @@
 				E7331AFC1614A17000C13798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7331AFD1614A17000C13798 /* Build configuration list for PBXNativeTarget "MGCheckboxTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +461,7 @@
 				E7331AFF1614A17000C13798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
