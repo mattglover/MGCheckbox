@@ -29,7 +29,7 @@ Add style type (MGCheckbox.h)
 ```objc
 typedef enum {
     CheckboxStyleDefault = 0,
-    CheckboxStyleNewStyle = 1
+    CheckboxStyleMyNewStyle = 1
 } CheckboxStyle;
 ```
 
@@ -44,9 +44,9 @@ Modifying method  + (id)checkboxWithStyle:(CheckboxStyle)style (MGCheckbox.m)
             [checkbox setOnImage:[UIImage imageNamed:@"checkbox-on"]];
             break;
 
-        case CheckboxStyleNewStyle:
-            [checkbox setOffImage:[UIImage imageNamed:@"newstyle-off"]];
-            [checkbox setOnImage:[UIImage imageNamed:@"newstyle-on"]];
+        case CheckboxStyleMyNewStyle:
+            [checkbox setOffImage:[UIImage imageNamed:@"mynewstyle-off"]];
+            [checkbox setOnImage:[UIImage imageNamed:@"mynewstyle-on"]];
             break;
             
         default:
@@ -63,7 +63,7 @@ Modifying method  + (id)checkboxWithStyle:(CheckboxStyle)style (MGCheckbox.m)
 and then calling 
 
 ```objc
-MGCheckbox *checkboxWithStyle = [MGCheckbox checkboxWithStyle:CheckboxStylNewStyle];
+MGCheckbox *checkboxWithStyle = [MGCheckbox checkboxWithStyle:CheckboxStyleMyNewStyle];
 ```
 
 ## Considerations
