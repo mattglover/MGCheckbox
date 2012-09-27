@@ -27,23 +27,32 @@
     
     MGCheckbox *checkboxDefault = [MGCheckbox checkbox];
     [checkboxDefault setCenter:CGPointMake(200, 100)];
+    [checkboxDefault addTarget:self action:@selector(checkBoxValueChanged:) forControlEvents:UIControlEventTouchUpInside];
     [self.window addSubview:checkboxDefault];
     
     MGCheckbox *checkboxWithStyle = [MGCheckbox checkboxWithStyle:CheckboxStyleDefault];
-    [checkboxWithStyle setCenter:CGPointMake(200, 180)];
+    [checkboxWithStyle setCenter:CGPointMake(200, 180)];;
+    [checkboxWithStyle addTarget:self action:@selector(checkBoxValueChanged:) forControlEvents:UIControlEventTouchUpInside];
     [self.window addSubview:checkboxWithStyle];
     
     MGCheckbox *checkboxWithImages = [MGCheckbox checkboxWithOnImage:[UIImage imageNamed:@"checkbox-on"] offImage:[UIImage imageNamed:@"checkbox-off"]];
-    [checkboxWithImages setCenter:CGPointMake(200, 260)];
+    [checkboxWithImages setCenter:CGPointMake(200, 260)];;
+    [checkboxWithImages addTarget:self action:@selector(checkBoxValueChanged:) forControlEvents:UIControlEventTouchUpInside];
     [self.window addSubview:checkboxWithImages];
     
     MGCheckbox *checkboxDefaultNoPulseOnSelect = [MGCheckbox checkbox];
     [checkboxDefaultNoPulseOnSelect setCenter:CGPointMake(200, 340)];
-    [checkboxDefaultNoPulseOnSelect setPulseOnSelect:NO];
+    [checkboxDefaultNoPulseOnSelect setPulseOnSelect:NO];;
+    [checkboxDefaultNoPulseOnSelect addTarget:self action:@selector(checkBoxValueChanged:) forControlEvents:UIControlEventTouchUpInside];
     [self.window addSubview:checkboxDefaultNoPulseOnSelect];
     
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)checkBoxValueChanged:(id)sender {
+    // handle checkbox value change
+    NSLog(@"handle checkbox value change here");
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
