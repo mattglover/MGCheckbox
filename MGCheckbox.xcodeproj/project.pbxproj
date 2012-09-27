@@ -35,17 +35,17 @@
 		E7331AD11614A17000C13798 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E7331AD31614A17000C13798 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E7331AD51614A17000C13798 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E7331AD91614A17000C13798 /* MGCheckbox-Info.plist */ = {isa = PBXFileReference; path = "MGCheckbox-Info.plist"; sourceTree = "<group>"; };
+		E7331AD91614A17000C13798 /* MGCheckbox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MGCheckbox-Info.plist"; sourceTree = "<group>"; };
 		E7331ADB1614A17000C13798 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E7331ADD1614A17000C13798 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E7331ADF1614A17000C13798 /* MGCheckbox-Prefix.pch */ = {isa = PBXFileReference; path = "MGCheckbox-Prefix.pch"; sourceTree = "<group>"; };
-		E7331AE01614A17000C13798 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E7331ADF1614A17000C13798 /* MGCheckbox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGCheckbox-Prefix.pch"; sourceTree = "<group>"; };
+		E7331AE01614A17000C13798 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7331AE11614A17000C13798 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E7331AE81614A17000C13798 /* MGCheckboxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGCheckboxTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7331AE91614A17000C13798 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E7331AF11614A17000C13798 /* MGCheckboxTests-Info.plist */ = {isa = PBXFileReference; path = "MGCheckboxTests-Info.plist"; sourceTree = "<group>"; };
+		E7331AF11614A17000C13798 /* MGCheckboxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MGCheckboxTests-Info.plist"; sourceTree = "<group>"; };
 		E7331AF31614A17000C13798 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E7331AF51614A17000C13798 /* MGCheckboxTests.h */ = {isa = PBXFileReference; path = MGCheckboxTests.h; sourceTree = "<group>"; };
+		E7331AF51614A17000C13798 /* MGCheckboxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGCheckboxTests.h; sourceTree = "<group>"; };
 		E7331AF61614A17000C13798 /* MGCheckboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGCheckboxTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
