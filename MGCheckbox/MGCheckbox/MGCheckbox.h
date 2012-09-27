@@ -14,6 +14,8 @@ typedef enum {
 
 @interface MGCheckbox : UIControl
 
+@property (nonatomic, assign) BOOL pulseOnSelect; // Defaults to YES
+
 + (id)checkbox;
 + (id)checkboxWithStyle:(CheckboxStyle)style;
 + (id)checkboxWithOnImage:(UIImage *)onImage offImage:(UIImage *)offImage;

@@ -27,9 +27,10 @@
 @synthesize offImage = _offImage;
 @synthesize style = _style;
 @synthesize checkboxImageView = _checkboxImageView;
+@synthesize pulseOnSelect = _pulseOnSelect;
 
 + (void)initialize {
-    //   [super initialize];
+    //    [super initialize];
 }
 
 + (id)checkbox {    
@@ -54,7 +55,7 @@
             [checkbox setOffImage:[UIImage imageNamed:@"checkbox-off"]];
             [checkbox setOnImage:[UIImage imageNamed:@"checkbox-on"]];
             break;
-                    
+            
         default:
             [checkbox setOffImage:[UIImage imageNamed:@"checkbox-off"]];
             [checkbox setOnImage:[UIImage imageNamed:@"checkbox-on"]];
@@ -74,11 +75,11 @@
     [super dealloc];
 }
 
-
 #pragma mark - Setup
 - (void)setup {
     self.backgroundColor = [UIColor clearColor];
     self.enabled = YES;
+    self.pulseOnSelect = YES;
     
     self.checkboxImageView = [[[UIImageView alloc] initWithImage:self.offImage] autorelease]; 
     [self.checkboxImageView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
@@ -99,21 +100,23 @@
 - (void)updateCheckbox:(BOOL)checked {
     
     if(checked) {
-        [UIView animateWithDuration:0.05
-                         animations:^{
-                             [self.checkboxImageView setTransform:CGAffineTransformMakeScale(1.2, 1.2)];
-                         } completion:^(BOOL finished){
-                             [UIView animateWithDuration:0.05
-                                              animations:^{
-                                                  [self.checkboxImageView setTransform:CGAffineTransformIdentity];
-                                              }];
-                             
-                             [self.checkboxImageView setImage:self.onImage];  
-                         }];
+        if(self.pulseOnSelect) {
+            [UIView animateWithDuration:0.05
+                             animations:^{
+                                 [self.checkboxImageView setTransform:CGAffineTransformMakeScale(1.2, 1.2)];
+                             } completion:^(BOOL finished){
+                                 [UIView animateWithDuration:0.05
+                                                  animations:^{
+                                                      [self.checkboxImageView setTransform:CGAffineTransformIdentity];
+                                                  }];
+                                  [self.checkboxImageView setImage:self.onImage]; 
+                             }];
+        } else {
+            [self.checkboxImageView setImage:self.onImage]; 
+        }
     } else {
         [self.checkboxImageView setImage:self.offImage]; 
     }
 }
-
 
 @end

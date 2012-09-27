@@ -37,6 +37,11 @@
     [checkboxWithImages setCenter:CGPointMake(200, 260)];
     [self.window addSubview:checkboxWithImages];
     
+    MGCheckbox *checkboxDefaultNoPulseOnSelect = [MGCheckbox checkbox];
+    [checkboxDefaultNoPulseOnSelect setCenter:CGPointMake(200, 340)];
+    [checkboxDefaultNoPulseOnSelect setPulseOnSelect:NO];
+    [self.window addSubview:checkboxDefaultNoPulseOnSelect];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
