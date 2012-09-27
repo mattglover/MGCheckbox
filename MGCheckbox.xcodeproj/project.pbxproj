@@ -18,6 +18,11 @@
 		E7331AEC1614A17000C13798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7331AD31614A17000C13798 /* Foundation.framework */; };
 		E7331AF41614A17000C13798 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7331AF21614A17000C13798 /* InfoPlist.strings */; };
 		E7331AF71614A17000C13798 /* MGCheckboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7331AF61614A17000C13798 /* MGCheckboxTests.m */; };
+		E7331B061614A36A00C13798 /* MGCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7331B051614A36A00C13798 /* MGCheckbox.m */; };
+		E7331B0D1614A41B00C13798 /* checkbox-off.png in Resources */ = {isa = PBXBuildFile; fileRef = E7331B091614A41B00C13798 /* checkbox-off.png */; };
+		E7331B0E1614A41B00C13798 /* checkbox-off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7331B0A1614A41B00C13798 /* checkbox-off@2x.png */; };
+		E7331B0F1614A41B00C13798 /* checkbox-on.png in Resources */ = {isa = PBXBuildFile; fileRef = E7331B0B1614A41B00C13798 /* checkbox-on.png */; };
+		E7331B101614A41B00C13798 /* checkbox-on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7331B0C1614A41B00C13798 /* checkbox-on@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,12 @@
 		E7331AF31614A17000C13798 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E7331AF51614A17000C13798 /* MGCheckboxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGCheckboxTests.h; sourceTree = "<group>"; };
 		E7331AF61614A17000C13798 /* MGCheckboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGCheckboxTests.m; sourceTree = "<group>"; };
+		E7331B041614A36A00C13798 /* MGCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGCheckbox.h; path = MGCheckbox/MGCheckbox.h; sourceTree = "<group>"; };
+		E7331B051614A36A00C13798 /* MGCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGCheckbox.m; path = MGCheckbox/MGCheckbox.m; sourceTree = "<group>"; };
+		E7331B091614A41B00C13798 /* checkbox-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-off.png"; path = "MGCheckbox/Resources/checkbox-off.png"; sourceTree = "<group>"; };
+		E7331B0A1614A41B00C13798 /* checkbox-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-off@2x.png"; path = "MGCheckbox/Resources/checkbox-off@2x.png"; sourceTree = "<group>"; };
+		E7331B0B1614A41B00C13798 /* checkbox-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-on.png"; path = "MGCheckbox/Resources/checkbox-on.png"; sourceTree = "<group>"; };
+		E7331B0C1614A41B00C13798 /* checkbox-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox-on@2x.png"; path = "MGCheckbox/Resources/checkbox-on@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +117,7 @@
 		E7331AD71614A17000C13798 /* MGCheckbox */ = {
 			isa = PBXGroup;
 			children = (
+				E7331B031614A33800C13798 /* MGCheckbox */,
 				E7331AE01614A17000C13798 /* AppDelegate.h */,
 				E7331AE11614A17000C13798 /* AppDelegate.m */,
 				E7331AD81614A17000C13798 /* Supporting Files */,
@@ -141,6 +153,27 @@
 				E7331AF21614A17000C13798 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7331B031614A33800C13798 /* MGCheckbox */ = {
+			isa = PBXGroup;
+			children = (
+				E7331B081614A3B900C13798 /* Resources */,
+				E7331B041614A36A00C13798 /* MGCheckbox.h */,
+				E7331B051614A36A00C13798 /* MGCheckbox.m */,
+			);
+			name = MGCheckbox;
+			sourceTree = "<group>";
+		};
+		E7331B081614A3B900C13798 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7331B091614A41B00C13798 /* checkbox-off.png */,
+				E7331B0A1614A41B00C13798 /* checkbox-off@2x.png */,
+				E7331B0B1614A41B00C13798 /* checkbox-on.png */,
+				E7331B0C1614A41B00C13798 /* checkbox-on@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +248,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7331ADC1614A17000C13798 /* InfoPlist.strings in Resources */,
+				E7331B0D1614A41B00C13798 /* checkbox-off.png in Resources */,
+				E7331B0E1614A41B00C13798 /* checkbox-off@2x.png in Resources */,
+				E7331B0F1614A41B00C13798 /* checkbox-on.png in Resources */,
+				E7331B101614A41B00C13798 /* checkbox-on@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +288,7 @@
 			files = (
 				E7331ADE1614A17000C13798 /* main.m in Sources */,
 				E7331AE21614A17000C13798 /* AppDelegate.m in Sources */,
+				E7331B061614A36A00C13798 /* MGCheckbox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
