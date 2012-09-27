@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    CheckboxStyleDefault = 0
+} CheckboxStyle;
+
 @interface MGCheckbox : UIControl
+
++ (id)checkbox;
++ (id)checkboxWithStyle:(CheckboxStyle)style;
++ (id)checkboxWithOnImage:(UIImage *)onImage offImage:(UIImage *)offImage;
+
+
 
 @end
