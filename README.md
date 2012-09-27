@@ -24,6 +24,7 @@ MGCheckbox *checkboxWithImages = [MGCheckbox checkboxWithOnImage:[UIImage imageN
 
 ## Extending the 'Styles'
 You can add you own style by doing the following :
+
 Add style type
 ```objc
 typedef enum {
@@ -60,7 +61,7 @@ Modifying method  + (id)checkboxWithStyle:(CheckboxStyle)style (MGCheckbox.m)
 }
 ```
 and then calling 
-```objc
+
 ```objc
 MGCheckbox *checkboxWithStyle = [MGCheckbox checkboxWithStyle:CheckboxStylNewStyle];
 ```
