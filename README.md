@@ -65,8 +65,6 @@ and then calling
 ```objc
 MGCheckbox *checkboxWithStyle = [MGCheckbox checkboxWithStyle:CheckboxStylNewStyle];
 ```
-```
-
 
 ## Considerations
 You can use your own images (selected and unselected), however I would suggest you use the same dimensions for both.
