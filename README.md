@@ -1,6 +1,6 @@
 # MGCheckbox, an extendable IOS Checkbox
 
-[![Screenshot](https://github.com/mattglover/MGCheckbox/screenie.png)]
+[![Screenshot](https://github.com/mattglover/MGCheckbox/blob/master/screenie.png)]
 
 ## Framework Dependancies
 MGCheckbox has a dependancy on QuartzCore framework, please make sure to include QuartzCore.framework within the 'Link Binary with Libraries' section under your Build Phases.
