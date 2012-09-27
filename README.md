@@ -12,18 +12,64 @@ I have tried to make it easy to use MGCheckbox by providing 3 convenience method
 + (id)checkboxWithOnImage:(UIImage *)onImage offImage:(UIImage *)offImage;
 ```
 ### Examples
-1.
 ```objc
 MGCheckbox *checkboxDefault = [MGCheckbox checkbox];
 ```
-2.
 ```objc
 MGCheckbox *checkboxWithStyle = [MGCheckbox checkboxWithStyle:CheckboxStyleDefault];
 ```
-3.
 ```objc
 MGCheckbox *checkboxWithImages = [MGCheckbox checkboxWithOnImage:[UIImage imageNamed:@"checkbox-on"] offImage:[UIImage imageNamed:@"checkbox-off"]];
 ```
+
+## Extending the 'Styles'
+You can add you own style by doing the following :
+Add style type
+```objc
+typedef enum {
+    CheckboxStyleDefault = 0,
+    CheckboxStyleNewStyle = 1
+} CheckboxStyle;
+```
+
+Modifying method  + (id)checkboxWithStyle:(CheckboxStyle)style (MGCheckbox.m)
+```objc
++ (id)checkboxWithStyle:(CheckboxStyle)style {
+    
+    MGCheckbox *checkbox = [[[MGCheckbox alloc] initWithFrame:CGRectZero] autorelease];
+    switch (style) {
+        case CheckboxStyleDefault:
+            [checkbox setOffImage:[UIImage imageNamed:@"checkbox-off"]];
+            [checkbox setOnImage:[UIImage imageNamed:@"checkbox-on"]];
+            break;
+
+        case CheckboxStyleNewStyle:
+            [checkbox setOffImage:[UIImage imageNamed:@"newstyle-off"]];
+            [checkbox setOnImage:[UIImage imageNamed:@"newstyle-on"]];
+            break;
+            
+        default:
+            [checkbox setOffImage:[UIImage imageNamed:@"checkbox-off"]];
+            [checkbox setOnImage:[UIImage imageNamed:@"checkbox-on"]];
+            break;
+    }
+    
+    [checkbox setup];
+    
+    return checkbox;
+}
+```
+and then calling 
+```objc
+```objc
+MGCheckbox *checkboxWithStyle = [MGCheckbox checkboxWithStyle:CheckboxStylNewStyle];
+```
+```
+
+
+## Considerations
+You can use your own images (selected and unselected), however I would suggest you use the same dimensions for both.
+
 
 ## License
 
