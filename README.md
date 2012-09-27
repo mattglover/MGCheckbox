@@ -5,6 +5,13 @@ MGCheckbox has a dependancy on QuartzCore framework, please make sure to include
 
 ## Example Usage
 I have tried to make it easy to use MGCheckbox by providing 3 convenience methods.
+
+```objc
++ (id)checkbox;
++ (id)checkboxWithStyle:(CheckboxStyle)style;
++ (id)checkboxWithOnImage:(UIImage *)onImage offImage:(UIImage *)offImage;
+```
+
 ```objc
 MGCheckbox *checkboxDefault = [MGCheckbox checkbox];
 ```
