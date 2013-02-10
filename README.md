@@ -74,4 +74,4 @@ You can use your own images (selected and unselected), however I would suggest y
 
 ## License
 
-All code is licensed under the MIT license. See the LICENSE file for more details.
+All code is licensed under the MIT license. See the LICENSE file for more details
