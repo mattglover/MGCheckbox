@@ -2,7 +2,7 @@
 
 ![Screenshot](https://raw.github.com/mattglover/MGCheckbox/master/screenie.png)
 
-## Framework Dependancies
+## Framework Dependancies.
 MGCheckbox has a dependancy on QuartzCore framework, please make sure to include QuartzCore.framework within the 'Link Binary with Libraries' section under your Build Phases.
 
 ## Usage
