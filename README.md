@@ -71,6 +71,7 @@ MGCheckbox *checkboxWithStyle = [MGCheckbox checkboxWithStyle:CheckboxStyleMyNew
 ## Considerations
 You can use your own images (selected and unselected), however I would suggest you use the same dimensions for both
 
+## Dummy Messages to play around with webhooks
 
 ## License
 
